@@ -122,4 +122,23 @@
     padding-top: 15px;
 }
 
+.news {
+    width: 75%;
+    margin: auto;
 
+}
+
+.container-news {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news section {
+
+    flex: 2;
+}
+
+.news aside {
+
+    flex: 1;
+}
