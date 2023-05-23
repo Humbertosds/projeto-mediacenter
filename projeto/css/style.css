@@ -19,6 +19,7 @@
     color: #727272;
     padding: 15px;
     text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
 }
 
 .menu a:hover {
@@ -38,13 +39,11 @@
     background-position: center;
     display: flex;
     justify-content: center;
-    
 }
 
 .container-column {
     display: flex;
     flex-direction: column;
-
     width: 75%;
 }
 
@@ -98,7 +97,7 @@
     
 }
 
-.btn {
+.btn1 {
     margin-top: 35px;
     height: 35px;
     width: 110px;
@@ -106,6 +105,28 @@
     border: 1.5px solid white;
     color: white;
     font-size: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.btn2 {
+    margin-top: 35px;
+    height: 35px;
+    width: 110px;
+    background-color: transparent;
+    border: 1.5px solid white;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn1:hover {
+    color: #39aae1;
+    background-color: white;
+}
+.btn2:hover {
+    color: #0079c7;
+    background-color: white;
 }
 
 #ho1, #ho2, #ho3 {
@@ -125,7 +146,7 @@
 .news {
     width: 75%;
     margin: auto;
-
+    padding-bottom: 500px;
 }
 
 .container-news {
@@ -134,11 +155,105 @@
 }
 
 .news section {
-
     flex: 2;
 }
 
 .news aside {
-
     flex: 1;
+}
+
+.title {
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.title .barra {
+    width: 70px;
+    margin-top: 10px;
+    background-color: #39aae1;
+    height: 2px;
+    border: none;
+}
+
+.title-h2 {
+    font-family:'Montserrat';
+    font-weight: bold;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#details-more  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(100, 100, 100, 0.589);
+    color: #727272;
+}
+
+#details-more div h2 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: #727272;
+}
+
+article {
+    flex: 1;
+    min-width: 35%;
+    margin-right: 20px;
+}
+
+.news-data {
+    display: flex;
+    margin-top: 30px;
+}
+
+.news-data .posted {
+    background-color: #2b4c99;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+}
+
+.news-data .comments {
+    background-color: #39aae1;
+    padding: 10px;
+    margin-left: 2px;
+    color: white;
+}
+
+.news-img img {
+    margin-top: 20px;
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+}
+
+.news-title {
+    font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.body-cubes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.body-cubes div {
+
+    width: 150px;
+    height: 150px;
+    background-color: #0079c7;
+    margin: 10px;
+}
+
+.body-footer p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
